@@ -337,7 +337,7 @@
     { g: 'Actions', t: 'Download CV (PDF)', run: () => { const a = document.createElement('a'); a.href = 'assets/Yeabkal_Dereje_CV.pdf'; a.download = ''; a.click(); } },
     { g: 'Actions', t: 'Toggle light / dark theme', run: toggleTheme },
     { g: 'Links', t: 'Open Telegram', run: () => open('https://t.me/YeabkalD', '_blank', 'noopener') },
-    { g: 'Links', t: 'Open LinkedIn', run: () => open('https://www.linkedin.com/in/yeabkal-dereje-a37a38184/', '_blank', 'noopener') },
+    { g: 'Links', t: 'Open LinkedIn', run: () => open('https://www.linkedin.com/in/yeabkal-dereje-082b32408/', '_blank', 'noopener') },
     { g: 'Links', t: 'View source on GitHub', run: () => open('https://github.com/yeabkaldereje/portfolio', '_blank', 'noopener') }
   ];
   let shown = [], sel = 0;
