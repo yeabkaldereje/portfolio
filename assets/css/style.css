@@ -428,7 +428,7 @@ dialog::backdrop { background: rgba(5, 5, 8, .86); -webkit-backdrop-filter: blur
 #lightbox { width: 100vw; height: 100dvh; }
 #lightbox[open] { display: grid; grid-template-rows: 1fr auto; }
 .lb-stage { position: relative; display: grid; place-items: center; padding: 56px 72px 8px; min-height: 0; }
-.lb-stage img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 40px 120px -20px rgba(0, 0, 0, .8); animation: lbin .45s var(--ease); }
+.lb-stage img { max-width: 100%; max-height: calc(100dvh - 150px); width: auto; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 40px 120px -20px rgba(0, 0, 0, .8); animation: lbin .45s var(--ease); }
 @keyframes lbin { from { opacity: 0; transform: scale(.97); } }
 .lb-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px clamp(16px, 4vw, 40px) 22px; color: #f4f2ed; }
 .lb-bar b { font: 700 1.05rem var(--f-display); display: block; }

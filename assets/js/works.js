@@ -1,6 +1,51 @@
 // Generated data for the portfolio. Add a new piece by dropping NAME-sm.webp (≈720px) and NAME-lg.webp (≈1600px) into assets/img/work/ and adding a row here.
 window.WORKS = [
 {
+"f": "abol-real-prizes",
+"t": "Real prizes, real winners",
+"c": "social",
+"p": "abol",
+"a": "Abol Lottery post: two scratch cards held in a hand above floating prizes \u2014 tuk-tuk, motorbike, phone and laptop \u2014 under the headline Real Prizes Real Winners",
+"w": 720,
+"h": 720
+},
+{
+"f": "abol-game-is-back",
+"t": "Your trusted game is back",
+"c": "social",
+"p": "abol",
+"a": "Abol Lottery relaunch post with two scratch cards, a bull, a motorbike, a phone and laptop over neon blue light beams",
+"w": 720,
+"h": 720
+},
+{
+"f": "abol-one-scratch",
+"t": "With one scratch",
+"c": "social",
+"p": "abol",
+"a": "Abol Lottery post reading With One Scratch: Bajaj, Boda boda, Smart phones, with a crowned scratch card and prizes flying through falling banknotes",
+"w": 720,
+"h": 890
+},
+{
+"f": "abol-scratch-match-win",
+"t": "Scratch. Match. Win!",
+"c": "social",
+"p": "abol",
+"a": "Abol Lottery post of two hands holding a scratch card and an orange phone up to a celebrating festival crowd with colour smoke",
+"w": 720,
+"h": 890
+},
+{
+"f": "abol-now-available",
+"t": "Now available at",
+"c": "social",
+"p": "abol",
+"a": "Abol Lottery post with red map pins marking the six sales points over an aerial photo of a river city",
+"w": 720,
+"h": 890
+},
+{
 "f": "eneguaz-roast-chart",
 "t": "Roast guide — bean chart",
 "c": "social",
@@ -533,6 +578,17 @@ window.WORKS = [
 }
 ];
 window.PROJECTS = [
+ {
+  "id": "abol",
+  "name": "Abol Lottery",
+  "kind": "Lottery launch campaign",
+  "tags": [
+   "Campaign",
+   "Scratch-card promo",
+   "Bilingual type"
+  ],
+  "blurb": "A multi-post campaign for a South Sudan scratch-card lottery: relaunch, prize and winners messaging, and a sales-point map, all built on one bold blue-and-gold look."
+ },
  {
   "id": "eneguaz",
   "name": "Eneguaz Coffee",
