@@ -1,6 +1,51 @@
 // Generated data for the portfolio. Add a new piece by dropping NAME-sm.webp (≈720px) and NAME-lg.webp (≈1600px) into assets/img/work/ and adding a row here.
 window.WORKS = [
 {
+"f": "els-anywhere",
+"t": "Wherever you are \u2014 weekly chance",
+"c": "social",
+"p": "els",
+"a": "Ethiopian Lottery Service post in Amharic: a golden map pin on a paper map of Ethiopia held over an Addis Ababa skyline at sunset",
+"w": 720,
+"h": 890
+},
+{
+"f": "els-100m-birr",
+"t": "100,000,000 birr lottery",
+"c": "social",
+"p": "els",
+"a": "Ethiopian Lottery Service post with a red ribbon headline reading 100,000,000 birr lottery and a hand holding a phone showing the Ethiolottery site",
+"w": 720,
+"h": 890
+},
+{
+"f": "els-ussd-8989",
+"t": "Your chance is in your hand \u2014 dial 8989",
+"c": "social",
+"p": "els",
+"a": "Ethiopian Lottery Service post with a hand holding a phone dialling the USSD code *8989# on a golden striped background",
+"w": 720,
+"h": 890
+},
+{
+"f": "els-ussd-8989-alt",
+"t": "Your chance is in your hand \u2014 variant",
+"c": "social",
+"p": "els",
+"a": "Variant of the 8989 USSD post with an orange headline, white subtitle and an enlarged 100 million birr badge",
+"w": 720,
+"h": 890
+},
+{
+"f": "els-become-millionaire",
+"t": "Become a millionaire soon",
+"c": "social",
+"p": "els",
+"a": "Ethiopian Lottery Service post with large Amharic type reading Soon become a millionaire beside a phone showing the 100 million birr lottery page",
+"w": 720,
+"h": 890
+},
+{
 "f": "abol-real-prizes",
 "t": "Real prizes, real winners",
 "c": "social",
@@ -578,6 +623,17 @@ window.WORKS = [
 }
 ];
 window.PROJECTS = [
+ {
+  "id": "els",
+  "name": "Ethiopian Lottery Service",
+  "kind": "100 Million Birr lottery campaign",
+  "tags": [
+   "Campaign",
+   "Amharic type",
+   "Mobile & USSD promo"
+  ],
+  "blurb": "Social posts for Ethiopia's national lottery and its 100 Million Birr draw: a weekly-chances message, a how-to-play guide for the 8989 USSD line and the website, all in one gold-and-red look."
+ },
  {
   "id": "abol",
   "name": "Abol Lottery",
