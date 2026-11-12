@@ -232,7 +232,7 @@
     </article>`;
   }).join('');
 
-  const cats = ['all', 'social', 'brand', 'print', 'apparel'];
+  const cats = ['all', ...['social', 'brand', 'print', 'apparel'].filter(c => WORKS.some(w => w.c === c))];
   const labels = { all: 'All', social: 'Social', brand: 'Branding', print: 'Print', apparel: 'Apparel' };
   filtersEl.innerHTML = cats.map(c => {
     const n = c === 'all' ? WORKS.length : WORKS.filter(w => w.c === c).length;
@@ -329,7 +329,7 @@
     { g: 'Navigate', t: 'Experience', run: go('experience') },
     { g: 'Navigate', t: 'Services', run: go('services') },
     { g: 'Navigate', t: 'Contact', run: go('contact') },
-    { g: 'Archive', t: 'Show only branding & logos', run: () => { go('grid')(); setFilter('brand'); } },
+    ...(WORKS.some(w => w.c === 'brand') ? [{ g: 'Archive', t: 'Show only branding & logos', run: () => { go('grid')(); setFilter('brand'); } }] : []),
     { g: 'Archive', t: 'Show only social media', run: () => { go('grid')(); setFilter('social'); } },
     { g: 'Archive', t: 'Show only print & posters', run: () => { go('grid')(); setFilter('print'); } },
     { g: 'Archive', t: 'Show everything', run: () => { go('grid')(); setFilter('all'); } },
