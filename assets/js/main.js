@@ -347,7 +347,11 @@
   /* ---------- client logos (hidden until logos are added in works.js) ---------- */
   const CL = window.CLIENTS || [], clBox = $('#clients'), clRow = $('#clients-row');
   if (CL.length && clBox && clRow) {
-    clRow.innerHTML = CL.map(c => '<li><img src="assets/img/clients/' + c.f + '" alt="' + c.n + '" loading="lazy" decoding="async"></li>').join('');
+    const li = (c, dup) => '<li' + (dup ? ' aria-hidden="true"' : '') + '><img src="assets/img/clients/' + c.f + '" alt="' + (dup ? '' : c.n) + '" decoding="async"></li>';
+    clRow.innerHTML = CL.map(c => li(c)).join('') + CL.map(c => li(c, true)).join('');
+    const wrap = document.createElement('div'); wrap.className = 'clients-marquee';
+    clRow.parentNode.insertBefore(wrap, clRow); wrap.appendChild(clRow);
+    clRow.classList.add('is-marquee');
     clBox.hidden = false;
   }
 
