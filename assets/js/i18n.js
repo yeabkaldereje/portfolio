@@ -126,7 +126,7 @@
     'Lottery launch campaign': 'የሎተሪ ማስጀመሪያ ዘመቻ', 'Scratch-card promo': 'የመፋቂያ ካርድ ማስተዋወቂያ', 'Bilingual type': 'ሁለት ቋንቋ ፊደል',
     'A multi-post campaign for a South Sudan scratch-card lottery: relaunch, prize and winners messaging, and a sales-point map, all built on one bold blue-and-gold look.': 'ለደቡብ ሱዳን የመፋቂያ ካርድ ሎተሪ የተሰራ ባለብዙ ፖስት ዘመቻ፦ ዳግም ማስጀመር፣ የሽልማትና የአሸናፊዎች መልዕክት እና የመሸጫ ቦታዎች ካርታ፣ ሁሉም በአንድ ደማቅ የሰማያዊና ወርቅ ገጽታ ላይ የተመሰረቱ።',
     'Social media system': 'የማህበራዊ ሚዲያ ሥርዓት', 'Campaigns': 'ዘመቻዎች', 'Pattern language': 'የቅርጽ ቋንቋ',
-    'A year of posts for a coffee brand: product education, seasonal greetings and an African Union Summit farewell, all held together by one colourful pattern-driven identity.': 'ለቡና ብራንድ የአንድ ዓመት ፖስቶች፦ የምርት ትምህርት፣ ወቅታዊ ሰላምታዎችና የአፍሪካ ህብረት ጉባኤ የስንብት ፖስት፣ ሁሉም በአንድ ባለቀለም በቅርጽ የተመራ ማንነት የተያያዙ።',
+    'Posts for a coffee brand: roast education, a Coffee Fest event poster, and Ramadan, Easter and holiday greetings in Amharic and English, all held together by one colourful pattern-driven identity.': 'ለቡና ብራንድ የተሰሩ ፖስቶች፦ የቡና አጠባበስ ትምህርት፣ የCoffee Fest ዝግጅት ፖስተር፣ እና በአማርኛና በእንግሊዝኛ የረመዳን፣ የፋሲካና የበዓል ሰላምታዎች፤ ሁሉም በአንድ ባለቀለም በቅርጽ የተመራ ማንነት የተያያዙ።',
     'Brand, social & web UI/UX': 'ብራንድ፣ ማህበራዊ ሚዲያና የድረ-ገጽ UI/UX', 'Figma website': 'የFigma ድረ-ገጽ', 'Brand consistency': 'የብራንድ ወጥነት',
     'Visual branding across print and digital for a tech company, from CCTV promos to national-day posts, plus the responsive website designed in Figma and handed to developers.': 'ለቴክኖሎጂ ኩባንያ በህትመትና በዲጂታል የተሰራ የምስል ብራንዲንግ፣ ከCCTV ማስተዋወቂያዎች እስከ የብሔራዊ በዓል ፖስቶች፣ እንዲሁም በFigma ተቀርጾ ለገንቢዎች የተላለፈው ምላሽ ሰጪ ድረ-ገጽ።',
     'Festive & seasonal posts': 'የበዓልና የወቅት ፖስቶች', 'Greetings': 'ሰላምታዎች', 'Cultural events': 'ባህላዊ ዝግጅቶች', 'Product-led': 'በምርት ላይ ያተኮረ',
