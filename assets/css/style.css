@@ -559,3 +559,5 @@ html[lang="am"] .sec-title, html[lang="am"] .contact h2, html[lang="am"] .cs-hea
 @keyframes clients-scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .clients-row.is-marquee { animation: none; } .clients-marquee { overflow-x: auto; } }
 .stat span span { display: inline; margin-top: 0; }
+
+.portrait-frame img { object-position: 50% 22%; }
