@@ -101,7 +101,7 @@
     'Brand identity or logo': 'የብራንድ ማንነት ወይም ሎጎ', 'Social media campaign': 'የማህበራዊ ሚዲያ ዘመቻ',
     'UI/UX or website design': 'UI/UX ወይም የድረ-ገጽ ዲዛይን', 'Print or event materials': 'የህትመት ወይም የዝግጅት ቁሳቁሶች',
     'Something else': 'ሌላ ነገር', 'Project details': 'የፕሮጀክት ዝርዝር', 'Send request': 'ጥያቄ ይላኩ',
-    'Your message is sent through the FormSubmit service to my inbox. You can also write to ydereje1@gmail.com directly.': 'መልዕክትዎ በFormSubmit አገልግሎት በኩል ወደ ኢሜይሌ ይላካል። በቀጥታም ወደ ydereje1@gmail.com መጻፍ ይችላሉ።',
+    'Your message is sent through the Web3Forms service to my inbox. You can also write to ydereje1@gmail.com directly.': 'መልዕክትዎ በWeb3Forms አገልግሎት በኩል ወደ ኢሜይሌ ይላካል። በቀጥታም ወደ ydereje1@gmail.com መጻፍ ይችላሉ።',
     'Campaigns': 'ዘመቻዎች', 'Web': 'ድረ-ገጽ', 'UI / UX': 'UI / UX', 'Brand identity': 'የብራንድ ማንነት',
     'Addis Ababa, Ethiopia (UTC+3)': 'አዲስ አበባ፣ ኢትዮጵያ (UTC+3)', 'Local time': 'የአካባቢ ሰዓት',
     'Hand-built with HTML, CSS & vanilla JS · no frameworks ·': 'በHTML፣ CSS እና vanilla JS በእጅ የተሰራ · ፍሬምወርክ የለም ·',
