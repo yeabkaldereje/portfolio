@@ -2,7 +2,6 @@
 window.WORKS = [{"f":"els-anywhere","t":"Wherever you are — weekly chance","c":"social","p":"els","a":"Ethiopian Lottery Service post in Amharic: a golden map pin on a paper map of Ethiopia held over an Addis Ababa skyline at sunset","w":720,"h":890},
 {"f":"els-100m-birr","t":"100,000,000 birr lottery","c":"social","p":"els","a":"Ethiopian Lottery Service post with a red ribbon headline reading 100,000,000 birr lottery and a hand holding a phone showing the Ethiolottery site","w":720,"h":890},
 {"f":"els-ussd-8989","t":"Your chance is in your hand — dial 8989","c":"social","p":"els","a":"Ethiopian Lottery Service post with a hand holding a phone dialling the USSD code *8989# on a golden striped background","w":720,"h":890},
-{"f":"els-ussd-8989-alt","t":"Your chance is in your hand — variant","c":"social","p":"els","a":"Variant of the 8989 USSD post with an orange headline, white subtitle and an enlarged 100 million birr badge","w":720,"h":890},
 {"f":"els-become-millionaire","t":"Become a millionaire soon","c":"social","p":"els","a":"Ethiopian Lottery Service post with large Amharic type reading Soon become a millionaire beside a phone showing the 100 million birr lottery page","w":720,"h":890},
 {"f":"abol-real-prizes","t":"Real prizes, real winners","c":"social","p":"abol","a":"Abol Lottery post: two scratch cards held in a hand above floating prizes — tuk-tuk, motorbike, phone and laptop — under the headline Real Prizes Real Winners","w":720,"h":720},
 {"f":"abol-game-is-back","t":"Your trusted game is back","c":"social","p":"abol","a":"Abol Lottery relaunch post with two scratch cards, a bull, a motorbike, a phone and laptop over neon blue light beams","w":720,"h":720},
@@ -36,11 +35,7 @@ window.WORKS = [{"f":"els-anywhere","t":"Wherever you are — weekly chance","c"
 {"f":"eneguaz-ramadan","t":"Ramadan Kareem","c":"social","p":"eneguaz","a":"Eneguaz Coffee Ramadan Kareem post with a lantern, coffee pot and dates","w":540,"h":720},
 {"f":"skylink-classes","t":"Classes start today","c":"social","p":"skylink","a":"Skylink Training Center post of a woman with a laptop announcing classes","w":540,"h":540},
 {"f":"cc-ramadan","t":"Ramadan Kareem","c":"social","p":"coffeecity","a":"Coffee City Ramadan Kareem post with an ornate lantern and sugar cubes on teal","w":540,"h":720},
-{"f":"card-hvacr","t":"HVACR business cards","c":"print","p":"","a":"Two HVACR business cards in white and navy with snowflake icon","w":720,"h":720},
 {"f":"skylink-training-design","t":"Graphic design course (Amharic)","c":"social","p":"skylink","a":"Skylink Training Center graphic design course ad in Amharic with a colourful gradient square","w":600,"h":600},
-{"f":"card-waf","t":"WAF Trading business cards","c":"print","p":"","a":"WAF Trading business cards with a blue and orange wave","w":720,"h":720},
-{"f":"card-wacker","t":"WACKER business cards","c":"print","p":"","a":"Black WACKER sealant business cards with white type","w":720,"h":895},
-{"f":"card-christmas","t":"Season’s greetings card","c":"print","p":"","a":"Christmas and New Year card with ornaments over a pine forest silhouette","w":720,"h":690},
 {"f":"banner-website","t":"Website banner concept","c":"print","p":"","a":"Website banner concept with a commuter train platform photo","w":720,"h":368},
 {"f":"neon-geez","t":"Neon Ge’ez sign","c":"print","p":"","a":"Neon sign mockup with a quill, hearts and Ge’ez script on a brick wall","w":720,"h":720}];
 window.PROJECTS = [
@@ -122,3 +117,4 @@ window.PROJECTS = [
   "blurb": "A repeatable template system for a training centre: course adverts, quote cards and awareness-month posts."
  }
 ];
+window.CLIENTS = []; // e.g. { n: "Client name", f: "client.png" } with files in assets/img/clients/

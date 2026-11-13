@@ -160,7 +160,7 @@
   /* ---------- text effects ---------- */
   (function roleScramble() {
     const el = $('#role'); if (!el) return;
-    const roles = ['Graphic Designer', 'UI/UX Designer', 'Brand Identity Specialist', 'Video Editor', 'Motion Designer'];
+    const roles = ['Graphic Designer', 'UI/UX Designer', 'Brand Identity Specialist', 'Print Designer'];
     if (reduced) { el.textContent = roles.join(' · '); return; }
     const glyphs = '!<>-_\\/[]{}=+*^?#01';
     let i = 0, token = 0;
@@ -320,6 +320,37 @@
   }
   $('#copy-mail').addEventListener('click', copyEmail);
 
+  /* ---------- order / contact form (FormSubmit, no account needed) ---------- */
+  const order = $('#order');
+  if (order) order.addEventListener('submit', async e => {
+    e.preventDefault();
+    const st = $('#order-status'), btn = $('#order-send');
+    if (order.elements._honey.value) return;               // spam trap
+    if (!order.checkValidity()) { order.reportValidity(); return; }
+    const data = Object.fromEntries(new FormData(order)); delete data._honey;
+    const mailto = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Project request: ' + data.need) +
+      '&body=' + encodeURIComponent(data.message + '\n\n' + data.name + '\n' + data.email);
+    btn.disabled = true; st.textContent = 'Sending…';
+    try {
+      const r = await fetch('https://formsubmit.co/ajax/' + EMAIL, {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ ...data, _subject: 'Portfolio request: ' + data.need, _captcha: 'false', _template: 'table' })
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.success === 'false' || j.success === false) throw new Error('send failed');
+      order.reset(); st.textContent = 'Thank you. Your request is sent and I will reply by email.'; toast('Request sent');
+    } catch (err) {
+      st.innerHTML = 'It could not be sent from here. <a href="' + mailto + '">Email me instead</a>.';
+    } finally { btn.disabled = false; }
+  });
+
+  /* ---------- client logos (hidden until logos are added in works.js) ---------- */
+  const CL = window.CLIENTS || [], clBox = $('#clients'), clRow = $('#clients-row');
+  if (CL.length && clBox && clRow) {
+    clRow.innerHTML = CL.map(c => '<li><img src="assets/img/clients/' + c.f + '" alt="' + c.n + '" loading="lazy" decoding="async"></li>').join('');
+    clBox.hidden = false;
+  }
+
   /* ---------- command palette ---------- */
   const pal = $('#palette'), palQ = $('#pal-q'), palList = $('#pal-list');
   const go = id => () => { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }); };
@@ -336,7 +367,8 @@
     { g: 'Actions', t: 'Copy email address', hint: EMAIL, run: copyEmail },
     { g: 'Actions', t: 'Download CV (PDF)', run: () => { const a = document.createElement('a'); a.href = 'assets/Yeabkal_Dereje_CV.pdf'; a.download = ''; a.click(); } },
     { g: 'Actions', t: 'Toggle light / dark theme', run: toggleTheme },
-    { g: 'Links', t: 'Open Telegram', run: () => open('https://t.me/YeabkalD', '_blank', 'noopener') },
+    { g: 'Links', t: 'Open Telegram', run: () => open('https://t.me/qencreatives', '_blank', 'noopener') },
+    { g: 'Links', t: 'Open Instagram', run: () => open('https://www.instagram.com/qen_creatives/', '_blank', 'noopener') },
     { g: 'Links', t: 'Open LinkedIn', run: () => open('https://www.linkedin.com/in/yeabkal-dereje-082b32408/', '_blank', 'noopener') },
     { g: 'Links', t: 'View source on GitHub', run: () => open('https://github.com/yeabkaldereje/portfolio', '_blank', 'noopener') }
   ];
