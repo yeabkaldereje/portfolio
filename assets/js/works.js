@@ -117,4 +117,14 @@ window.PROJECTS = [
   "blurb": "A repeatable template system for a training centre: course adverts, quote cards and awareness-month posts."
  }
 ];
-window.CLIENTS = []; // e.g. { n: "Client name", f: "client.png" } with files in assets/img/clients/
+window.CLIENTS = [
+ { n: "Tamcon Software Solutions", f: "tamcon.webp" },
+ { n: "Awash Bank", f: "awash.webp" },
+ { n: "Ethiopian Lottery Service", f: "els.webp" },
+ { n: "HOPETECH", f: "hopetech.webp" },
+ { n: "Mekhil Empowerment & Training Center", f: "mekhil.webp" },
+ { n: "Eneguaz Coffee", f: "eneguaz.webp" },
+ { n: "Solis Trade Service PLC", f: "solis.webp" },
+ { n: "Happy Optics Optometry Clinic", f: "happy-optics.webp" },
+ { n: "Layu Toys", f: "layu.webp" }
+];
