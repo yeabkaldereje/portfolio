@@ -384,7 +384,7 @@
     { g: 'Links', t: 'Open Telegram', run: () => open('https://t.me/qencreatives', '_blank', 'noopener') },
     { g: 'Links', t: 'Open Instagram', run: () => open('https://www.instagram.com/qen_creatives/', '_blank', 'noopener') },
     { g: 'Links', t: 'Open LinkedIn', run: () => open('https://www.linkedin.com/in/yeabkal-dereje-082b32408/', '_blank', 'noopener') },
-    { g: 'Links', t: 'View source on GitHub', run: () => open('https://github.com/yeabkaldereje/portfolio', '_blank', 'noopener') }
+    { g: 'Links', t: 'View source on GitHub', run: () => open('https://github.com/yeabkaldereje/yeabkaldereje.github.io', '_blank', 'noopener') }
   ];
   let shown = [], sel = 0;
   function renderPal() {
