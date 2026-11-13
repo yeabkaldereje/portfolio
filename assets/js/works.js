@@ -33,6 +33,7 @@ window.WORKS = [{"f":"els-anywhere","t":"Wherever you are — weekly chance","c"
 {"f":"skylink-cctv","t":"High-level CCTV installation","c":"social","p":"skylink","a":"Skylink promo with three white CCTV cameras on a dark blue background","w":600,"h":600},
 {"f":"bekur-who","t":"Who are we?","c":"social","p":"bekur","a":"Bekur Guide introduction post with a woman using the app and a map screen","w":540,"h":540},
 {"f":"mekhil-lakein","t":"Quote card — Alan Lakein","c":"social","p":"mekhil","a":"Mekhil quote card on navy with a portrait of Alan Lakein","w":626,"h":625},
+{"f":"mekhil-new-year-2019","t":"Ethiopian New Year 2019","c":"social","p":"mekhil","a":"Mekhil Empowerment & Training Center Ethiopian New Year greeting with an illustrated girl, yellow flowers and doves on a blue textured background","w":720,"h":937},
 {"f":"flyer-youth-day","t":"Africa Youth Day","c":"print","p":"","a":"Africa Youth Day poster in red with the South African flag colours","w":720,"h":999},
 {"f":"skylink-classes","t":"Classes start today","c":"social","p":"skylink","a":"Skylink Training Center post of a woman with a laptop announcing classes","w":540,"h":540},
 {"f":"skylink-training-design","t":"Graphic design course (Amharic)","c":"social","p":"skylink","a":"Skylink Training Center graphic design course ad in Amharic with a colourful gradient square","w":600,"h":600},
