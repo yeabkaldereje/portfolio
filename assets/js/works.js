@@ -126,5 +126,7 @@ window.CLIENTS = [
  { n: "Eneguaz Coffee", f: "eneguaz.webp" },
  { n: "Solis Trade Service PLC", f: "solis.webp" },
  { n: "Happy Optics Optometry Clinic", f: "happy-optics.webp" },
- { n: "Layu Toys", f: "layu.webp" }
+ { n: "Layu Toys", f: "layu.webp" },
+ { n: "Paragon Real Estate", f: "paragon.webp" },
+ { n: "ትንሹ", f: "tinsu.webp" }
 ];
