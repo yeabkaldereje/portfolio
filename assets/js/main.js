@@ -366,7 +366,7 @@
     { g: 'Navigate', t: 'Contact', run: go('contact') },
     ...(WORKS.some(w => w.c === 'brand') ? [{ g: 'Archive', t: 'Show only branding & logos', run: () => { go('grid')(); setFilter('brand'); } }] : []),
     { g: 'Archive', t: 'Show only social media', run: () => { go('grid')(); setFilter('social'); } },
-    { g: 'Archive', t: 'Show only print & posters', run: () => { go('grid')(); setFilter('print'); } },
+    ...(WORKS.some(w => w.c === 'print') ? [{ g: 'Archive', t: 'Show only print & posters', run: () => { go('grid')(); setFilter('print'); } }] : []),
     { g: 'Archive', t: 'Show everything', run: () => { go('grid')(); setFilter('all'); } },
     { g: 'Actions', t: 'Copy email address', hint: EMAIL, run: copyEmail },
     { g: 'Actions', t: 'Download CV (PDF)', run: () => { const a = document.createElement('a'); a.href = 'assets/Yeabkal_Dereje_CV.pdf'; a.download = ''; a.click(); } },
