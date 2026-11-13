@@ -337,10 +337,20 @@
         body: JSON.stringify({ ...data, _subject: 'Portfolio request: ' + data.need, _captcha: 'false', _template: 'table' })
       });
       const j = await r.json().catch(() => ({}));
-      if (!r.ok || j.success === 'false' || j.success === false) throw new Error('send failed');
+      if (!r.ok || j.success === 'false' || j.success === false) { const e = new Error('send failed'); e.server = j.message || ''; throw e; }
       order.reset(); st.textContent = 'Thank you. Your request is sent and I will reply by email.'; toast('Request sent');
     } catch (err) {
-      st.innerHTML = 'It could not be sent from here. <a href="' + mailto + '">Email me instead</a>.';
+      console.warn('Order form:', err && (err.server || err.message));
+      if (err && err.server && /activat/i.test(err.server)) {
+        st.innerHTML = 'Almost there: the form is being activated. Please <a href="' + mailto + '">email me directly</a> for now.';
+      } else {
+        // network blocked (ad blocker, in-app browser): fall back to a normal form post in a new tab
+        const f = document.createElement('form');
+        f.method = 'POST'; f.action = 'https://formsubmit.co/' + EMAIL; f.target = '_blank'; f.style.display = 'none';
+        Object.entries({ ...data, _subject: 'Portfolio request: ' + data.need, _captcha: 'false', _template: 'table' }).forEach(([k, v]) => { const i = document.createElement('input'); i.type = 'hidden'; i.name = k; i.value = v; f.appendChild(i); });
+        document.body.appendChild(f); f.submit(); f.remove();
+        st.innerHTML = 'Opened the send page in a new tab. If nothing arrives, <a href="' + mailto + '">email me instead</a>.';
+      }
     } finally { btn.disabled = false; }
   });
 
