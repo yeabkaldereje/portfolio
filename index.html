@@ -68,6 +68,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <kbd id="kbd-hint">Ctrl K</kbd>
       </button>
+      <button class="icon-btn lang-btn" id="lang-btn" type="button" aria-label="Switch language to Amharic" title="አማርኛ / English">አማ</button>
       <button class="icon-btn theme-btn" id="theme-btn" aria-label="Toggle light and dark theme">
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
@@ -90,7 +91,7 @@
         <div>
           <div class="eyebrow">
             <span class="geez" lang="am">ሰላም</span>
-            <span>Addis Ababa, ET · <time id="clock">--:--</time> local</span>
+            <span><span>Addis Ababa, ET</span> · <time id="clock">--:--</time> <span>local</span></span>
             <span class="status">Open to remote &amp; freelance work</span>
           </div>
 
@@ -393,11 +394,11 @@
           <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
           <div class="field full"><label for="f-need">What do you need?</label>
             <select id="f-need" name="need">
-              <option>Brand identity or logo</option>
-              <option>Social media campaign</option>
-              <option>UI/UX or website design</option>
-              <option>Print or event materials</option>
-              <option>Something else</option>
+              <option value="Brand identity or logo">Brand identity or logo</option>
+              <option value="Social media campaign">Social media campaign</option>
+              <option value="UI/UX or website design">UI/UX or website design</option>
+              <option value="Print or event materials">Print or event materials</option>
+              <option value="Something else">Something else</option>
             </select></div>
           <div class="field full"><label for="f-msg">Project details</label><textarea id="f-msg" name="message" rows="5" required placeholder="What is it for, when do you need it, and any links or examples."></textarea></div>
           <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -412,7 +413,7 @@
         <div class="contact-meta reveal">
           <a href="tel:+251980816884">+251 980 816 884</a>
           <span>Addis Ababa, Ethiopia (UTC+3)</span>
-          <span>Local time <time id="clock2">--:--</time></span>
+          <span><span>Local time</span> <time id="clock2">--:--</time></span>
         </div>
       </div>
     </section>
@@ -452,5 +453,6 @@
 
   <script src="assets/js/works.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
 </body>
 </html>

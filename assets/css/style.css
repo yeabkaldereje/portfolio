@@ -539,3 +539,11 @@ img, video, svg { max-width: 100%; }
 .order-note { grid-column: 1 / -1; color: var(--muted); font-size: .8rem; }
 .order button[disabled] { opacity: .6; pointer-events: none; }
 @media (max-width: 600px) { .order { grid-template-columns: 1fr; } }
+
+/* ---------- language switch ---------- */
+.lang-btn { font: 700 .82rem var(--f-body); letter-spacing: 0; }
+html[lang="am"] body { font-family: "Noto Sans Ethiopic", var(--f-body); line-height: 1.75; }
+html[lang="am"] .display { line-height: 1.12; }
+html[lang="am"] .sec-label, html[lang="am"] .field label, html[lang="am"] .cs-meta dt, html[lang="am"] .edu-card small { letter-spacing: 0; text-transform: none; }
+html[lang="am"] .sec-title, html[lang="am"] .contact h2, html[lang="am"] .cs-head h3 { letter-spacing: 0; line-height: 1.2; }
+@media (max-width: 360px) { .cmdk-btn { display: none; } }
